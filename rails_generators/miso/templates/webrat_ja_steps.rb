@@ -90,7 +90,7 @@ end
 # you want to specify the name of the date on the form. For example:
 # When I select "April 26, 1982" as the "Date of Birth" date
 When /^"([^\"]*)"の日付として"([^\"]*)"を選択する$/ do |date_label, date|
-  When %Q(I select "#{datetime_label}" as the "#{date}" date)
+  When %Q(I select "#{date_label}" as the "#{date}" date)
 end
 
 When /^"([^\"]*)"をチェックする$/ do |field|
